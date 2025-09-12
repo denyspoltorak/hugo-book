@@ -93,6 +93,7 @@
 
   p {
     word-wrap: break-word;
+    text-align: justify;
   }
 
   blockquote {
@@ -139,6 +140,7 @@
   ol {
     padding-inline-start: $padding-16 * 2;
     word-wrap: break-word;
+    text-align: justify;
   }
 
   dl {
