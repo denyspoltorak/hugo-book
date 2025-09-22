@@ -44,6 +44,9 @@ $hint-colors: (
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
   --hint-color-danger: #f66;
+
+  --color-green: green;
+  --color-red: crimson;
 }
 
 @mixin theme-dark {
@@ -62,4 +65,7 @@ $hint-colors: (
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
   --hint-color-danger: #f66;
+
+  --color-green: lime;
+  --color-red: red;
 }

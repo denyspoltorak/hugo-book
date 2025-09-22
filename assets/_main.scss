@@ -287,6 +287,15 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+// Custom colors
+.book-green {
+  color: var(--color-green);
+}
+
+.book-red {
+  color: var(--color-red);
+}
+
 // Responsive styles
 .book-menu-content,
 .book-toc-content,
