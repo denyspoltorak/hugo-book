@@ -199,6 +199,11 @@
   figure {
     margin: $padding-16 0;
     text-align: center;
+
+    a {
+      outline: none;
+    }
+
     figcaption p {
       margin-top: 0;
     }
