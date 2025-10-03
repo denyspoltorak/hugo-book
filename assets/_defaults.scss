@@ -60,7 +60,7 @@ $hint-colors: (
   --body-background: #343a40;
   --body-font-color: #e9ecef;
 
-  --icon-filter: none;
+  --icon-filter: brightness(0) invert(1);
 
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
