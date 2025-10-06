@@ -134,6 +134,10 @@
     word-wrap: break-word;
     text-align: justify;
 
+    li {
+        padding-bottom: $padding-8;
+    }
+
     a {
       text-align: start;
     }
