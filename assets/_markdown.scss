@@ -133,6 +133,10 @@
     padding-inline-start: $padding-16 * 2;
     word-wrap: break-word;
     text-align: justify;
+
+    a {
+      text-align: start;
+    }
   }
 
   dl {
