@@ -1,3 +1,24 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+
+.grid-container-toc {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: $container-max-width) {
+  .grid-container-toc {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-header-toc {
+  grid-column: 1 / -1;
+}
