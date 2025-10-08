@@ -2,6 +2,7 @@
 
 // @import "plugins/numbered";
 
+// Grid classes
 .grid-container-toc {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -21,4 +22,13 @@
 
 .grid-header-toc {
   grid-column: 1 / -1;
+}
+
+// Custom colors
+.book-green {
+  color: var(--color-green);
+}
+
+.book-red {
+  color: var(--color-red);
 }
