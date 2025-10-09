@@ -3,24 +3,33 @@
 // @import "plugins/numbered";
 
 // Grid classes
-.grid-container-toc {
+.grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
   justify-items: center;
+  align-items: center;
 
   p {
     text-align: center;
   }
 }
 
+.grid5 {
+  @extend .grid;
+  grid-template-columns: repeat(5, 1fr);
+}
 @media (max-width: $container-max-width) {
-  .grid-container-toc {
+  .grid5 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.grid-header-toc {
+.grid3 {
+  @extend .grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-row {
   grid-column: 1 / -1;
 }
 
