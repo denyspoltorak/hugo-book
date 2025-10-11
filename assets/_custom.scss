@@ -6,11 +6,15 @@
 .grid {
   display: grid;
   row-gap: 0.5rem;
-  justify-items: center;
-  align-items: center;
 
   p {
     text-align: center;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
