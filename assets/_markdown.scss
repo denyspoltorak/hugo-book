@@ -128,6 +128,15 @@
     background: var(--gray-200);
   }
 
+  p:has(+ ul, + ol) {
+    margin-bottom: $padding-4;
+  }
+
+  p + ul,
+  p + ol {
+    margin-top: $padding-4;
+  }
+
   ul,
   ol {
     padding-inline-start: $padding-16 * 2;
@@ -135,8 +144,7 @@
     text-align: justify;
 
     li {
-      padding-top: $padding-4;
-      padding-bottom: $padding-4;
+      margin: $padding-4;
     }
 
     a {
