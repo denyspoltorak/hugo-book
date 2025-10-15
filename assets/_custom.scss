@@ -15,23 +15,39 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 0.1rem solid var(--gray-500);
+    border-radius: 1rem;
+    background-color: var(--gray-100);
+    margin: 0;
+    gap: 0;
+
+    picture,
+    p {
+      padding: 0.5rem;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
 .grid3 {
   @extend .grid;
-  column-gap: 5%;
+  column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .grid5 {
   @extend .grid;
-  column-gap: 3%;
+  column-gap: 1%;
   grid-template-columns: repeat(5, 1fr);
 }
 @media (max-width: $mobile-breakpoint) {
   .grid5 {
-    column-gap: 5%;
+    column-gap: 2%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
