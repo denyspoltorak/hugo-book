@@ -7,14 +7,10 @@
   display: grid;
   row-gap: 0.5rem;
 
-  p {
-    text-align: center;
-  }
-
   a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     border: 0.1rem solid var(--gray-500);
     border-radius: 1rem;
     background-color: var(--gray-100);
@@ -24,13 +20,17 @@
     picture,
     p,
     h2 {
+      text-align: center;
+      line-height: 1.5;
       padding: 0.5rem;
       margin: 0;
     }
   }
-
   a:has(h2) {
     margin-top: 1.5rem;
+  }
+  a:has(picture) {
+    justify-content: space-between;
   }
 }
 
@@ -38,6 +38,11 @@
   @extend .grid;
   column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: $mobile-breakpoint) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .grid5 {
@@ -48,7 +53,7 @@
 @media (max-width: $mobile-breakpoint) {
   .grid5 {
     column-gap: 2%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
