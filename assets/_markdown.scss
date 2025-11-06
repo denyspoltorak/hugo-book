@@ -55,6 +55,15 @@
     &[href]:visited {
       color: var(--color-visited-link);
     }
+
+    &[href^="http://"],
+    &[href^="https://"] {
+      color: var(--color-external-link);
+    }
+    &[href^="http://"]:visited,
+    &[href^="https://"]:visited {
+      color: var(--color-visited-external-link);
+    }
   }
 
   img {
