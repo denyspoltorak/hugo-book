@@ -32,6 +32,10 @@
   a:has(picture) {
     justify-content: space-between;
   }
+  a[href^="http://"],
+  a[href^="https://"] {
+    border-radius: 0;
+  }
 }
 
 .grid3 {
