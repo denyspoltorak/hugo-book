@@ -19,6 +19,9 @@ https://github.com/alex-shpak/hugo-book
 
 <title>{{ partial "docs/html-head-title" . }}</title>
 {{ partial "docs/html-head-favicon" . }}
+{{- if eq .Layout "landing"}}
+  {{ partial "docs/html-head-ld-json" . }}
+{{end -}}
 
 {{- $manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">

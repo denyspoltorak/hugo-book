@@ -1,0 +1,9 @@
+{{ $schema := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "url" .Site.BaseURL
+    "name" .Site.Title
+}}
+<script type="application/ld+json">
+{{- $schema | jsonify | safeJS -}}
+</script>
