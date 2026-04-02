@@ -1,0 +1,11 @@
+{{- if .Params.primary_image -}}
+  {{ $schema := dict
+    "@context" "https://schema.org"
+    "@type" "WebPage"
+    "url" .Permalink
+    "primaryImageOfPage" .Params.primary_image
+  }}
+<script type="application/ld+json">
+  {{- $schema | jsonify | safeJS -}}
+  </script>
+{{- end -}}
