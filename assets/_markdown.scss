@@ -168,15 +168,24 @@
   }
 
   dl {
+    text-align: justify;
+
     dt {
+      display: inline-block;
       font-weight: bolder;
-      margin-top: $padding-16;
+      margin-top: $padding-8;
     }
 
     dd {
+      display: inline;
       margin-inline-start: 0;
-      margin-bottom: $padding-16;
-      text-align: justify;
+    }
+    dd::before {
+      content: " – ";
+    }
+    dd::after {
+      content: "\A";
+      white-space: pre;
     }
   }
 
