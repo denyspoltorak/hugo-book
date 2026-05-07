@@ -65,6 +65,21 @@
   grid-column: 1 / -1;
 }
 
+// Resizable HTML map replacement
+.map {
+  position:     relative;
+  display:      inline-block;
+  width:        100%;
+
+  img {
+    vertical-align:bottom;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 // Custom colors
 .book-green {
   color: var(--color-green);
