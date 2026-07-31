@@ -52,6 +52,7 @@ $hint-colors: (
 
   --color-green: green;
   --color-red: crimson;
+  --color-light-yellow: lemonchiffon;
 }
 
 @mixin theme-dark {
@@ -71,4 +72,5 @@ $hint-colors: (
 
   --color-green: lime;
   --color-red: red;
+  --color-light-yellow: #550;
 }
