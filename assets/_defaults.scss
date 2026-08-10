@@ -56,21 +56,21 @@ $hint-colors: (
 }
 
 @mixin theme-dark {
-  --gray-100: #494e54;
-  --gray-200: #5c6165;
-  --gray-500: #999d9f;
+  --gray-100: #23222B;
+  --gray-200: #2A2934;
+  --gray-500: #8E8D90;
 
   --color-link: #84b2ff;
   --color-visited-link: #b88dff;
   --color-external-link: sandybrown;
   --color-visited-external-link: goldenrod;
 
-  --body-background: #343a40;
+  --body-background: #1C1B22;
   --body-font-color: #e9ecef;
 
   --icon-filter: brightness(0) invert(1);
 
   --color-green: lime;
   --color-red: red;
-  --color-light-yellow: #550;
+  --color-light-yellow: #330;
 }
